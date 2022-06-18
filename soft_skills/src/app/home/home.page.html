@@ -1,0 +1,93 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="cor">
+    <ion-title>Soft Skills</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <img src="../../assets/softs.gif" alt="">
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Soft Skills</ion-card-title>
+      <ion-card-subtitle>O que são?</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <p>As <strong>Soft Skills</strong> são habilidades ou qualidades comportamentais que estão relacionadas à maneira
+        como uma pessoa
+        se comporta ou lida com diferentes situações.</p>
+      <p><span>O termo "</span><span class="nude">soft</span><span>" faz referência a palavra
+          <strong>Interpessoal</strong>, ou seja, o que já faz parte
+          da pessoa, enquanto que "<span class="red">skills</span>" significa <strong>Habilidades.</strong></span></p>
+      <p><span> Sendo assim, o termo "</span><span class="nude">soft</span><span class="red"> skills</span>" <span>pode
+          ser traduzido como <strong>Habilidades Interpessoais.</strong></span></p>
+    </ion-card-content>
+
+    <ion-card-header>
+      <ion-card-subtitle>No trabalho:</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <p>As soft skills ganharam extrema relevância no mercado de trabalho nos últimos anos, porque além de gerarem mais
+        resultados para o negócio, elas também passaram a criar um ambiente de trabalho mais <strong>saudável e
+          produtivo</strong>, o que melhorou as <strong>relações interpessoais</strong>.</p>
+      <p>As empresas passaram a entender que profissionais carregam uma bagagem de <strong>qualidades</strong> e
+        <strong>experiências</strong> que se refletem no seu dia a dia de trabalho. Se elas conseguirem identificar ou
+        desenvolver essas características nos profissionais, em alinhamento com as atividades e a cultura da empresa,
+        tendem a ter times mais comprometidos, produtivos e bem-sucedidos.</p>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>As 5 <span class="nude">Soft </span><span class="red">Skills </span>aqui abordadas:
+      </ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>Elas são: </p>
+      <ion-list>
+        <ion-item-sliding>
+          <ion-item>
+            <ion-avatar slot="start">
+              <img src="../../assets/IE.gif">
+            </ion-avatar>
+            <ion-label>Inteligência Emocional</ion-label>
+          </ion-item>
+          <ion-item-options side="end">
+            <ion-item-option color="nude" (click)="fav()">
+              <ion-icon class="heart" slot="icon-only" name="heart"></ion-icon>
+            </ion-item-option>
+          </ion-item-options>
+        </ion-item-sliding>
+
+        <ion-item>
+          <ion-avatar slot="start">
+            <img src="../../assets/honestidade.jpg">
+          </ion-avatar>
+          <ion-label>Honestidade</ion-label>
+        </ion-item>
+
+        <ion-item>
+          <ion-avatar slot="start">
+            <img src="../../assets/adaptacao.jpg">
+          </ion-avatar>
+          <ion-label>Adaptação</ion-label>
+        </ion-item>
+
+        <ion-item>
+          <ion-avatar slot="start">
+            <img src="../../assets/chat.jpg">
+          </ion-avatar>
+          <ion-label>Comunicação</ion-label>
+        </ion-item>
+
+        <ion-item>
+          <ion-avatar slot="start">
+            <img src="../../assets/negocios.gif">
+          </ion-avatar>
+          <ion-label>Negócios</ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

@@ -1,0 +1,37 @@
+.msgs{
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 9px;
+    white-space: pre-wrap;
+}
+
+.efeito{
+    transition: 5s;
+}
+
+.sis{
+    background-color: #ffdbf0;
+}
+
+.user{
+    background-color: #ffbfbf;
+}
+
+.msgs-input{
+    width: 100%;
+    border: 1px solid var(--ion-color-cor);
+    border-radius: 10px;
+    resize: none;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.msg-btn{
+    --padding-start: 0.5em;
+    --padding-end: 0.5em;
+    height: 46px;
+}
+
+.drax{
+    display: none;
+}

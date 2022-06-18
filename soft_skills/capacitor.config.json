@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "soft_skills",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}

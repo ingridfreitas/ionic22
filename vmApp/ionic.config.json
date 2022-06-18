@@ -1,0 +1,7 @@
+{
+  "name": "vmApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

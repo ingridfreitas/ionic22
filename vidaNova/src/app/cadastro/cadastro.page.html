@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Cadastro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <h1>Pessoas</h1>
+
+  <ion-item>
+    <ion-label position="floating">Nome</ion-label>
+    <ion-input [(ngModel)]="usuario.nome"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">CPF</ion-label>
+    <ion-input [(ngModel)]="usuario.cpf"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Data de Nascimento</ion-label>
+    <ion-input [(ngModel)]="usuario.dataNascimento"></ion-input>
+  </ion-item>
+
+
+  <ion-item>
+    <ion-label position="floating">Telefone</ion-label>
+    <ion-input [(ngModel)]="usuario.fone"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">E-Mail</ion-label>
+    <ion-input [(ngModel)]="usuario.email"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Senha</ion-label>
+    <ion-input [(ngModel)]="usuario.senha"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Confirmar Senha</ion-label>
+    <ion-input [(ngModel)]="confirmarSenha"></ion-input>
+  </ion-item>
+
+    <ion-button expand="block" color="secondary" (click)="salvar()">Salvar</ion-button>
+
+    <ion-button expand="block" routerLink="/home">Voltar</ion-button>
+
+</ion-content>

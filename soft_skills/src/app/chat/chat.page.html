@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar color="cor">
+    <ion-title>Comunicação</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row *ngFor="let message of messages">
+      <ion-col size="9" *ngIf="usuario !== message.user" class="msgs sis">
+        <strong>{{message.user}}</strong><br>
+        <span (click)="aparecer()">{{message.msg}}</span>
+      </ion-col>
+
+      <ion-col offset="3" size="9" *ngIf="usuario === message.user" class="msgs user">
+        <strong>{{message.user}}</strong><br>
+        <span>{{message.msg}}</span>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <img src="../../assets/adaptacao.jpg" class="drax" alt="" (click)="rota()">
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar color="dark">
+    <ion-row align-items-center no-padding>
+      <ion-col size="10">
+        <textarea autosize maxRows="4" [(ngModel)] = "newMsg" class="msgs-input"></textarea>
+      </ion-col>
+      <ion-col size="2">
+        <ion-button expand="block" fills="clear" color="cor" [disable]="newMsg === ''" class="msg-btn" (click)=msgEnv() (click)=next()>
+          <ion-icon name="send-outline"></ion-icon>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-toolbar>
+</ion-footer>

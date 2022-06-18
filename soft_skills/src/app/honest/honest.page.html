@@ -1,0 +1,177 @@
+<ion-header>
+  <ion-toolbar color="cor">
+    <ion-title>Honestidade</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Quiz de Honestidade</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <h2>
+        Supondo que você vê que errou uma questão e seu professor dá um ponto a mais por engano, você:
+      </h2>
+      <ion-list>
+        <ion-item>
+          <ion-grid>
+            <ion-row (click)="falso()" class="fd">
+              <ion-col size="2">
+                <input type="radio" class="katia" name="ft">
+              </ion-col>
+              <ion-col size="10">
+                <label for="katia">Finge que nada aconteceu</label>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-item>
+        <ion-item>
+          <ion-grid>
+            <ion-row (click)="serio()">
+              <ion-col size="2">
+                <input type="radio" class="vdd" name="ft">
+              </ion-col>
+              <ion-col size="10">
+                <label for="vdd">Diz a verdade e perde um ponto</label>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-content>
+      <h2>
+        Costuma quebrar regras?
+      </h2>
+      <ion-list>
+        <ion-item>
+          <ion-grid>
+            <ion-row (click)="falso()" class="fd">
+              <ion-col size="2">
+                <input type="radio" class="katia" name="nd">
+              </ion-col>
+              <ion-col size="10">
+                <label for="katia">Sim</label>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-item>
+        <ion-item>
+          <ion-grid>
+            <ion-row (click)="serio()">
+              <ion-col size="2">
+                <input type="radio" class="vdd" name="nd">
+              </ion-col>
+              <ion-col size="10">
+                <label for="vdd">Não</label>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-content>
+      <h2>
+        Se seu melhor amigo faz algo errado você:
+      </h2>
+      <ion-list>
+        <ion-item>
+          <ion-grid>
+            <ion-row (click)="serio()">
+              <ion-col size="2">
+                <input type="radio" class="katia" name="rd">
+              </ion-col>
+              <ion-col size="10">
+                <label for="katia">O denuncia, regras são regras</label>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-item>
+        <ion-item>
+          <ion-grid>
+            <ion-row (click)="falso()" class="fd">
+              <ion-col size="2">
+                <input type="radio" class="vdd" name="rd">
+              </ion-col>
+              <ion-col size="10">
+                <label for="vdd">O protege, mesmo não concordando</label>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-content>
+      <h2>
+        Sua prioridade é:
+      </h2>
+      <ion-list>
+        <ion-item>
+          <ion-grid>
+            <ion-row (click)="serio()">
+              <ion-col size="2">
+                <input type="radio" class="katia" name="th">
+              </ion-col>
+              <ion-col size="10">
+                <label for="katia">Verdade</label>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-item>
+        <ion-item>
+          <ion-grid>
+            <ion-row (click)="falso()" class="fd">
+              <ion-col size="2">
+                <input type="radio" class="vdd" name="ft">
+              </ion-col>
+              <ion-col size="10">
+                <label for="vdd">Conquista</label>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-item>
+      </ion-list>
+
+      <ion-button class="sk" expand="block" color="cor" (click)="resultado()">FINAL</ion-button>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card class="drax magic">
+    <ion-card-header>
+      <ion-card-title>Resultado:</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>Você respondeu: </p>
+      <p><span class="h"></span> questões com caráter <span class="vdd">HONESTO</span> e <span class="d"></span> com
+        caráter <span class="luk">DESONESTO</span></p>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card class="drax magic1">
+    <ion-card-header>
+      <ion-card-title>Agora, com honestidade, responda: </ion-card-title>
+    </ion-card-header>
+    <ion-button class="sk" expand="block" color="cor" (click)="info()">Saber a importância da Honestidade
+    </ion-button>
+    <ion-button class="sk" expand="block" color="cor" (click)="rota()">Ir para o próximo tópico</ion-button>
+  </ion-card>
+
+  <ion-card class="infos drax">
+    <ion-card-header>
+      <ion-card-subtitle>Importâcia da Honestidade</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <p>Honestidade significa honrar com a verdade. Uma pessoa honesta tem um caráter íntegro: não engana, não trapaça, não rouba. Portanto, a honestidade é importante para criar relações de confiança. Quem mente ou engana perde a sua credibilidade no grupo. Nas empresas, a honestidade é pré-requisito para uma contratação e demonstra a integridade do profissional em suas condutas.</p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
